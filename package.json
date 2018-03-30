@@ -1,0 +1,20 @@
+{
+  "name": "spacedock",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "npm": "^5.8.0"
+  },
+  "devDependencies": {
+    "axios": "^0.18.0",
+    "electron": "^1.8.4",
+    "electron-prebuilt": "^0.29.2",
+    "qs": "^6.5.1"
+  }
+}

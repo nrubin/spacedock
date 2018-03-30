@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Spacedock</title>
+    <style>
+    html {
+        width: 100vw;
+        height: 100vh;
+        margin: 0;
+        padding: 0;
+    }
+    webview {
+        min-width: 600px;
+        min-height: 800px;
+    }
+    </style>
+  </head>
+  <body id="browser">
+    <nav id="navigation">
+    <button id="thefirst">This document</button>
+    <button id="thesecond">Another document</button>
+    <button id="thethird">A third document</button>
+    <button id="dev">open the damn dev tools</button>
+    </nav>
+      <div id="views">
+        <webview src="https://docs.google.com/document/d/1-q6JgL9IgMSWXGaN_NZLeSl_Jh_3BD5sn8B6opj321s/edit" autosize="on" ></webview>
+      </div>
+  <script>
+    // You can also require other files to run in this process
+    require('./renderer.js')
+  </script>
+</html>

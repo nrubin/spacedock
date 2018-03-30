@@ -126,14 +126,19 @@ async function googleSignIn () {
     // return mySignInFunction(providerUser)
 }
 
-googleSignIn()
-
-document.getElementById("thefirst").addEventListener("click",function(){view.loadURL("https://docs.google.com/document/d/1WunfEMZggq8TNCSjbsGNtZD6du3szuHfMjk7YoGQu9E/edit")});
+document.getElementById("thefirst").addEventListener("click",function(){
+  console.log(view);
+  view.loadURL("https://docs.google.com/document/d/1WunfEMZggq8TNCSjbsGNtZD6du3szuHfMjk7YoGQu9E/edit")
+});
 document.getElementById("thesecond").addEventListener("click",function(){view.loadURL("https://docs.google.com/document/d/1g6aPGpLDKrWlN7lEsnUSUQwNSWapAD2_kBxFIFXdkpo/edit")});
 document.getElementById("thethird").addEventListener("click",function(){view.loadURL("https://docs.google.com/document/d/1Iyq1yIgca1VrcjW8rj_QL4SRLF193ApoLS6MVOqN-7s/edit")});
 document.getElementById("dev").addEventListener("click",function(){
     remote.getCurrentWindow().toggleDevTools();
 });
+
+googleSignIn()
+
+
 
 
 

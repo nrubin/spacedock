@@ -91,7 +91,7 @@ const GOOGLE_FILE_URL ='https://www.googleapis.com/drive/v3/files'
   }
   
 async function getAllDocuments(accessToken){
-    const q = "mimeType=application/vnd.google-apps.document"
+    const q = "mimeType contains 'document'"
     const response = await axios.get(GOOGLE_FILE_URL, {
         headers: {
             'Content-Type': 'application/json',
